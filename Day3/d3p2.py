@@ -1,4 +1,4 @@
-f = open('input.txt')
+f = open('Day3/input.txt')
 ll = f.readlines()
 result = 0
 
