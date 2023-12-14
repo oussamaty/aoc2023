@@ -18,7 +18,6 @@ This repository contains my solutions for the Advent of Code 2023 challenges. [A
 
 Throughout Advent of Code 2023, my focus was on having fun and trying to solve the problems in the most brain burning way to maximize my misery.
 
-
 ## Getting Started
 
 Clone the repository:
