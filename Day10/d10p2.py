@@ -76,8 +76,7 @@ def dfs(s, c, d, v):
     p = set([s])
     while p:
         i, j = p.pop()
-        if (i,j) not in c:
-            d[(i, j)] = v
+        d[(i, j)] = v
         for y, x in connections:
             if i + x > len(b) - 1 or i + x < 0: continue
             if j + y > len(b[i + x]) - 1 or j + y < 0: continue
