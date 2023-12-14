@@ -16,7 +16,8 @@ This repository contains my solutions for the Advent of Code 2023 challenges. [A
 
 ## Overview
 
-Throughout Advent of Code 2023, my focus was on developing optimized solutions, with a notable example being the Day 5 Part 2 problem. For this challenge, I employed a top-down approach through range mapping. This strategic optimization not only enabled me to achieve correct solutions but also delivered impressive response times, consistently under 1 millisecond, even in Python. Though it took considerable effort to iron out all the edge cases, the final result is a source of pride in my approach to problem-solving during this event.
+Throughout Advent of Code 2023, my focus was on having fun and trying to solve the problems in the most brain burning way to maximize my misery.
+
 
 ## Getting Started
 
