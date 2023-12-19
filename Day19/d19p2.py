@@ -86,7 +86,7 @@ class Interval:
             for key in other.boundaries:
                 self.boundaries[key] = self.intersect_1d(key, other.boundaries[key])
     
-    def union(self, other, key):
+    def union(self, other, key = None):
         if key:
             self.boundaries[key] = self.union_1d(key, other.boundaries[key])
         else:
@@ -171,7 +171,7 @@ def solution():
     intervals = get_intervals()
     queue = [('in', intervals['in'], Interval())]
     visited = set()
-    result = 0
+    leafs = []
     while queue:
         name, workflow, interval = queue.pop()
         visited.add(name)
@@ -181,9 +181,10 @@ def solution():
             if key not in  ('A', 'R'):
                 queue.append((key, intervals[key], new_interval))
             elif key == 'A':
-                result += new_interval.combinations()
+                leafs.append(new_interval)
     
-    return result
+    result = sum(interval.combinations() for interval in leafs)
+    return  result
 
 result = solution()
 
